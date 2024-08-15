@@ -1,8 +1,14 @@
 import profileSvg from '../../assets/img/profile.svg';
+import { Navbar } from '../../components/Navbar';
 import './profile.css';
 export function Profile() {
   return (
-    <div className="main">
+     <>
+    <div>
+    <Navbar/>
+    </div>
+
+<div className="main">
       <div className="img-container">
         <img src={profileSvg} alt="Profile-Pic" />
       </div>
@@ -26,5 +32,6 @@ export function Profile() {
         <p>1234 Main St, Springfield, IL 62701</p>
       </div>
     </div>
+</>
   );
 };
