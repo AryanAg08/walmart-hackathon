@@ -1,0 +1,106 @@
+/* Trends Container */
+.trends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Trend Item */
+.trend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.trend:hover {
+  transform: scale(1.05);
+}
+
+.trend img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.trend-info {
+  text-align: center;
+}
+
+.trend-info h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.trend-rating {
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.trend-info p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.trend-info button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.trend-info button:hover {
+  background-color: #218838;
+}
+
+/* Bottom Line Container for Item Details */
+.item-details {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-top: 2px solid #007bff;
+  padding: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-details h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-details p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.item-details button {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.item-details button:hover {
+  background-color: #0056b3;
+}
