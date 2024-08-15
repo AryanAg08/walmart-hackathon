@@ -1,6 +1,6 @@
-import profileSvg from '../src/assets/profile.svg';
-import './App.css';
-export default function Profile() {
+import profileSvg from '../../assets/img/profile.svg';
+import './profile.css';
+export function Profile() {
   return (
     <div className="main">
       <div className="img-container">
@@ -27,4 +27,4 @@ export default function Profile() {
       </div>
     </div>
   );
-}
+};
